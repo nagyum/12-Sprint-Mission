@@ -31,7 +31,6 @@ function emailChange(){
         emailInput.classList.add('error');
         submitBtn.disabled=true;
     }
-    
 }
 
 
@@ -47,7 +46,7 @@ function passwordChange(){
         pwError.classList.add('error_msg');
         submitBtn.disabled=true;
     }
-    else if(password.length<=8){
+    else if(password.length<8){
         pwError.innerText='비밀번호를 8자 이상 입력해주세요';
         pwInput.classList.add('error');
         pwError.classList.add('error_msg');
